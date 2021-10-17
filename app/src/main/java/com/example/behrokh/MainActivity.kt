@@ -2,6 +2,7 @@ package com.example.behrokh
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.FrameLayout
 
 class MainActivity : AppCompatActivity() {
@@ -13,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         val frame1=findViewById<FrameLayout>(R.id.fram1)
         val frame2=findViewById<FrameLayout>(R.id.fram2)
         btn1.setOnClickListener {
-            frame1.visibility=view.GONE
-            frame2.visibility=view.VISIBLE
+            frame1.visibility=(View.GONE)
+            frame2.visibility=(View.VISIBLE)
 
         }
         btn2
-            frame1.visibility=view.VISIBLE
-            frame2.visibility=view.GONE
+            frame1.visibility=(View.VISIBLE)
+            frame2.visibility=(View.GONE)
 
         }
     }
